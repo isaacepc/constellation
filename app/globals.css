@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #050816;
+  --foreground: #f1f5ff;
+  --muted: #a5b0d6;
+  --star: #ffe9a8;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-star: var(--star);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Night sky: soft nebula glow plus two layers of tiny stars. */
+.night-sky {
+  background:
+    radial-gradient(ellipse at 20% 10%, rgba(88, 80, 180, 0.25), transparent 55%),
+    radial-gradient(ellipse at 85% 80%, rgba(40, 120, 170, 0.18), transparent 55%),
+    var(--background);
+  position: relative;
+  isolation: isolate;
+}
+.night-sky::before,
+.night-sky::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-repeat: repeat;
+}
+.night-sky::before {
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 120px 80px, #cfd8ff, transparent),
+    radial-gradient(1px 1px at 200px 160px, #fff, transparent),
+    radial-gradient(1px 1px at 60px 190px, #ffe9a8, transparent),
+    radial-gradient(1px 1px at 170px 20px, #fff, transparent);
+  background-size: 240px 240px;
+  opacity: 0.6;
+}
+.night-sky::after {
+  background-image:
+    radial-gradient(1.5px 1.5px at 50px 120px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 300px 40px, #ffe9a8, transparent),
+    radial-gradient(1.5px 1.5px at 220px 300px, #cfd8ff, transparent);
+  background-size: 380px 380px;
+  animation: twinkle 5s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.35; }
+  to { opacity: 0.9; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .night-sky::after { animation: none; }
 }
