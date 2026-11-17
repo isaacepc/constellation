@@ -2,6 +2,467 @@
   "slug": "astronaut",
   "title": "Astronaut",
   "emoji": "🚀",
-  "tagline": "I want to float in space and see Earth from the window.",
-  "stars": []
+  "tagline": "Ride a rocket, float above the world, and come home to tell the story.",
+  "stars": [
+    {
+      "id": "gravity-and-orbits",
+      "name": "Gravity & Orbits",
+      "prereqs": [],
+      "x": 20,
+      "y": 85,
+      "pretest": "Fire a cannonball sideways from a very tall mountain, faster and faster each time. What eventually happens?",
+      "lesson": "An orbit is falling that keeps missing the ground. Move sideways fast enough and Earth's surface curves away as quickly as you fall. The ISS, about 400 km up, travels roughly 7.7 km/s and circles Earth every 90 minutes or so. Gravity up there is still about 90% of what you feel on the ground. Astronauts float because they and the station are in constant free fall together, not because gravity is gone.",
+      "quiz": [
+        {
+          "q": "Why do astronauts on the ISS float?",
+          "options": [
+            "Earth's magnetic field cancels gravity",
+            "The station spins fast enough to cancel gravity",
+            "There is no gravity at that altitude",
+            "They and the station are in continuous free fall around Earth"
+          ],
+          "answer": 3,
+          "why": "Gravity at ISS height is still about 90% of surface gravity. Everything on board falls together around Earth, so nothing pushes on anything else."
+        },
+        {
+          "q": "Roughly how fast does the ISS travel?",
+          "options": [
+            "120 km/h",
+            "2,000 km/h",
+            "28,000 km/h",
+            "300,000 km/h"
+          ],
+          "answer": 2,
+          "why": "About 7.7 km/s, or roughly 28,000 km/h. That sideways speed is what keeps it from falling into the ground."
+        },
+        {
+          "q": "About how long does one ISS orbit take?",
+          "options": [
+            "10 minutes",
+            "90 minutes",
+            "One week",
+            "24 hours"
+          ],
+          "answer": 1,
+          "why": "At about 7.7 km/s around a roughly 400 km high orbit, one lap takes about 90 minutes, so astronauts see around 16 sunrises a day."
+        }
+      ]
+    },
+    {
+      "id": "rocket-propulsion",
+      "name": "Rocket Propulsion",
+      "prereqs": [],
+      "x": 45,
+      "y": 85,
+      "pretest": "Rockets work in space where there is no air to push against. So what are they pushing on?",
+      "lesson": "A rocket throws mass backward and gets pushed forward: Newton's third law. It needs no air, which is why rockets work in a vacuum. The rocket equation says your speed gain depends on how fast the exhaust leaves and on how much of your launch mass is fuel. Because most of a rocket is fuel, engineers use stages: drop the empty tanks, so you stop carrying dead weight.",
+      "quiz": [
+        {
+          "q": "What two things mainly set how much speed a rocket can gain?",
+          "options": [
+            "Exhaust speed and the ratio of fueled mass to empty mass",
+            "Launch-pad height and air temperature",
+            "Payload color and engine noise",
+            "Number of astronauts and cabin size"
+          ],
+          "answer": 0,
+          "why": "That is the rocket equation: faster exhaust and a larger fuel fraction both give more change in velocity."
+        },
+        {
+          "q": "Why do rockets use stages?",
+          "options": [
+            "To look more impressive on TV",
+            "Dropping empty tanks means less mass left to accelerate",
+            "Stages make the exhaust colder",
+            "Each stage uses a different kind of air"
+          ],
+          "answer": 1,
+          "why": "Empty tanks are dead weight. Shedding them lets the remaining rocket gain speed far more efficiently."
+        },
+        {
+          "q": "A rocket engine works in the vacuum of space because...",
+          "options": [
+            "It pushes against traces of air",
+            "It throws exhaust backward and is pushed forward in return",
+            "It pushes against the solar wind",
+            "It pushes against the Moon's gravity"
+          ],
+          "answer": 1,
+          "why": "Newton's third law: every action has an equal and opposite reaction. No air is needed."
+        }
+      ]
+    },
+    {
+      "id": "human-physiology",
+      "name": "The Body in Space",
+      "prereqs": [],
+      "x": 82,
+      "y": 85,
+      "pretest": "After six months in orbit, what part of an astronaut's body is changed the most, and why?",
+      "lesson": "Without gravity loading the body, bones and muscles weaken. Weight-bearing bones can lose around 1% of their density per month, so astronauts exercise about two hours a day on a treadmill, bike, and resistance machine. Body fluids shift toward the head, causing puffy faces and pressure changes that can affect eyesight. Radiation is another concern, since Earth's atmosphere no longer shields them. Recovery on Earth takes weeks to months.",
+      "quiz": [
+        {
+          "q": "Why do astronauts exercise about two hours every day?",
+          "options": [
+            "Because it is required for docking",
+            "To stay warm",
+            "To counter bone and muscle loss",
+            "To burn off extra oxygen"
+          ],
+          "answer": 2,
+          "why": "Without gravity loading the skeleton and muscles, they weaken. Daily resistance and cardio work slows that loss."
+        },
+        {
+          "q": "What happens to body fluids in microgravity?",
+          "options": [
+            "They shift toward the head",
+            "They evaporate",
+            "Nothing changes",
+            "They all pool in the feet"
+          ],
+          "answer": 0,
+          "why": "On Earth gravity pulls fluid toward the legs. In orbit it redistributes upward, causing puffy faces and head pressure."
+        },
+        {
+          "q": "Which bones lose density fastest in orbit?",
+          "options": [
+            "Ear bones",
+            "Finger bones",
+            "Skull bones",
+            "Weight-bearing bones such as hips, legs, and spine"
+          ],
+          "answer": 3,
+          "why": "Bones adapt to the loads they carry. When the load disappears, the ones that normally bear the most weight lose the most."
+        }
+      ]
+    },
+    {
+      "id": "orbital-maneuvers",
+      "name": "Orbital Maneuvers",
+      "prereqs": [
+        "gravity-and-orbits",
+        "rocket-propulsion"
+      ],
+      "x": 30,
+      "y": 62,
+      "pretest": "You are in orbit and want to climb to a higher orbit. Do you burn forward, backward, or straight up?",
+      "lesson": "To go higher, burn prograde, in the direction you are already moving. That raises the orbit on the opposite side. Counterintuitively, a higher orbit is slower, because gravity is weaker there and the path is longer. A Hohmann transfer is the efficient two-burn trip between circular orbits: one burn stretches your orbit up to the target, and a second burn at the top circularizes it. Burning retrograde, backward, lowers your orbit.",
+      "quiz": [
+        {
+          "q": "To raise your orbit, which direction do you burn?",
+          "options": [
+            "Prograde (along your motion)",
+            "Straight toward Earth",
+            "Straight away from Earth",
+            "Retrograde (against your motion)"
+          ],
+          "answer": 0,
+          "why": "Adding speed along your direction of travel raises the opposite side of the orbit."
+        },
+        {
+          "q": "Compared with a low orbit, a satellite in a higher circular orbit moves...",
+          "options": [
+            "Faster",
+            "Not at all",
+            "At exactly the same speed",
+            "More slowly"
+          ],
+          "answer": 3,
+          "why": "Gravity is weaker farther out, so less orbital speed is needed to stay up. Higher orbits are slower and take longer per lap."
+        },
+        {
+          "q": "How many burns does a Hohmann transfer between two circular orbits use?",
+          "options": [
+            "One",
+            "Two",
+            "Zero",
+            "Five"
+          ],
+          "answer": 1,
+          "why": "One burn sets the transfer ellipse, and a second circularizes at the destination orbit."
+        }
+      ]
+    },
+    {
+      "id": "space-environment",
+      "name": "The Space Environment",
+      "prereqs": [
+        "gravity-and-orbits"
+      ],
+      "x": 60,
+      "y": 62,
+      "pretest": "Space is famously cold. So why do spacecraft and suits need cooling systems?",
+      "lesson": "Space is a near-vacuum, so heat cannot be carried away by air. It leaves only as radiation. In sunlight, spacecraft surfaces can exceed 100 °C, and in shadow they can drop below -100 °C; the ISS swings between them every orbit. Radiation from the Sun and cosmic rays is another hazard. Earth's magnetic field partly shields low Earth orbit, which is one reason trips to the Moon and Mars carry more radiation risk.",
+      "quiz": [
+        {
+          "q": "Why is overheating a real problem for spacecraft despite the cold of space?",
+          "options": [
+            "Cold space melts metal",
+            "Space is secretly warm",
+            "With no air, heat cannot be carried away except by radiating it",
+            "Rockets burn all the time"
+          ],
+          "answer": 2,
+          "why": "Without air, there is no convection. Equipment heat must be moved to radiators that emit it as infrared."
+        },
+        {
+          "q": "Why is radiation exposure higher beyond low Earth orbit?",
+          "options": [
+            "Gravity is stronger",
+            "There are more stars nearby",
+            "It leaves the partial protection of Earth's magnetic field",
+            "The spacecraft is moving faster"
+          ],
+          "answer": 2,
+          "why": "Earth's magnetosphere deflects a lot of charged particles near the planet. Past it, crews are far more exposed."
+        },
+        {
+          "q": "How do spacecraft shed excess heat?",
+          "options": [
+            "Opening the hatch",
+            "Fans blowing into space",
+            "Dumping cold water",
+            "Radiator panels that emit infrared"
+          ],
+          "answer": 3,
+          "why": "Radiators carry heat from onboard systems and emit it as infrared light, the only way to cool off in a vacuum."
+        }
+      ]
+    },
+    {
+      "id": "life-support",
+      "name": "Life Support",
+      "prereqs": [
+        "human-physiology"
+      ],
+      "x": 88,
+      "y": 62,
+      "pretest": "True or false: every drop of water astronauts drink has to be launched from Earth.",
+      "lesson": "False. The ISS recycles most of its water, including urine and moisture from breath and sweat, into drinking water, recovering well over 90%. Oxygen comes mostly from electrolysis: using electricity to split water into hydrogen and oxygen. Scrubbers remove carbon dioxide, which builds up quickly in a sealed cabin and must be removed continuously. The cabin is held near Earth's sea-level pressure so crews can breathe normally.",
+      "quiz": [
+        {
+          "q": "How does the ISS mainly make oxygen?",
+          "options": [
+            "Plants only",
+            "Electrolysis: splitting water with electricity",
+            "Burning fuel",
+            "Pulling it from space"
+          ],
+          "answer": 1,
+          "why": "Electrolysis splits water into hydrogen and oxygen. The oxygen is released into the cabin."
+        },
+        {
+          "q": "How much of the ISS's water is recycled?",
+          "options": [
+            "Well over 90%, including urine and humidity",
+            "Exactly 50%",
+            "None, all of it comes from Earth",
+            "About 10%"
+          ],
+          "answer": 0,
+          "why": "Water recovery systems turn urine and cabin humidity back into drinking water, cutting resupply needs dramatically."
+        },
+        {
+          "q": "Why must carbon dioxide be removed continuously?",
+          "options": [
+            "It affects only the plants",
+            "It builds up quickly in a sealed cabin",
+            "It damages solar panels",
+            "It makes the cabin too cold"
+          ],
+          "answer": 1,
+          "why": "Every breath adds CO2. In a closed space it accumulates fast, so scrubbers run all the time."
+        }
+      ]
+    },
+    {
+      "id": "rendezvous-docking",
+      "name": "Rendezvous & Docking",
+      "prereqs": [
+        "orbital-maneuvers"
+      ],
+      "x": 18,
+      "y": 38,
+      "pretest": "A station is ahead of you in the same orbit. To catch it, do you speed up or slow down?",
+      "lesson": "Slow down. Braking drops you into a lower orbit, where you travel faster and gain on the station; then you raise your orbit again as you close in. This is called phasing. Final approach is slow: contact speeds are only a few centimeters per second, along planned paths with go/no-go checks. Many modern spacecraft, like Crew Dragon, dock automatically while the crew monitors and can take manual control.",
+      "quiz": [
+        {
+          "q": "A station is ahead of you in the same orbit. To catch up you should...",
+          "options": [
+            "Slow down to a lower, faster orbit",
+            "Speed up (burn prograde)",
+            "Wait for Earth to rotate",
+            "Burn straight at it"
+          ],
+          "answer": 0,
+          "why": "Burning prograde would lift you into a slower, higher orbit and you would fall behind. Dropping lower makes you gain on the target."
+        },
+        {
+          "q": "Why do lower orbits have a higher orbital speed?",
+          "options": [
+            "Rockets burn hotter",
+            "Gravity is stronger there",
+            "The Moon pulls on you less",
+            "The air pushes harder"
+          ],
+          "answer": 1,
+          "why": "Stronger gravity at lower altitude requires more speed to stay in orbit."
+        },
+        {
+          "q": "How fast are two spacecraft moving toward each other at contact when docking?",
+          "options": [
+            "As fast as possible",
+            "About 100 km/h",
+            "A few centimeters per second",
+            "1 km/s"
+          ],
+          "answer": 2,
+          "why": "Docking is a gentle touch, only a few centimeters per second, so hardware is not damaged and latches can engage."
+        }
+      ]
+    },
+    {
+      "id": "reentry",
+      "name": "Reentry & Landing",
+      "prereqs": [
+        "orbital-maneuvers",
+        "space-environment"
+      ],
+      "x": 45,
+      "y": 38,
+      "pretest": "What mostly heats a capsule during reentry: friction with the air, or something else?",
+      "lesson": "Mostly something else. The capsule hits air so fast, about 7.8 km/s from orbit, that the air cannot get out of the way. It compresses into a shock wave in front of the vehicle, heating to thousands of degrees. Blunt shapes push that shock away from the hull. Heat shields, often ablative, char and burn away, carrying heat with them. To leave orbit, you burn retrograde to lower your path into the atmosphere.",
+      "quiz": [
+        {
+          "q": "What causes most of the heating during reentry?",
+          "options": [
+            "Compression of air into a shock wave ahead of the vehicle",
+            "Engines firing",
+            "Rubbing friction on the hull",
+            "Sunlight"
+          ],
+          "answer": 0,
+          "why": "At orbital speed the air is compressed so violently that it becomes extremely hot, far more than simple friction would produce."
+        },
+        {
+          "q": "Why are reentry capsules blunt rather than pointy?",
+          "options": [
+            "It saves fuel",
+            "It looks better",
+            "It keeps the hot shock wave away from the hull",
+            "It makes the capsule lighter"
+          ],
+          "answer": 2,
+          "why": "A blunt body creates a shock wave that stands off from the surface, carrying most of the heat into the air instead of the hull."
+        },
+        {
+          "q": "To leave orbit and come home, you burn...",
+          "options": [
+            "Retrograde, to slow down",
+            "Prograde, to speed up",
+            "You do not need to burn",
+            "Straight up"
+          ],
+          "answer": 0,
+          "why": "A retrograde burn lowers the far side of your orbit until it dips into the atmosphere."
+        }
+      ]
+    },
+    {
+      "id": "eva-spacesuits",
+      "name": "Spacewalks & Suits",
+      "prereqs": [
+        "space-environment",
+        "human-physiology"
+      ],
+      "x": 75,
+      "y": 38,
+      "pretest": "Why can an astronaut not just step from the station straight into a spacewalk?",
+      "lesson": "Suits are pressurized to roughly 30% of cabin pressure, with pure oxygen, because high pressure makes suits stiff and hard to move. But going from nitrogen-rich cabin air to low pressure can form nitrogen bubbles in the blood, the bends. So astronauts prebreathe pure oxygen for hours to flush nitrogen out. Tethers keep them attached, and training happens in giant underwater pools that mimic weightlessness.",
+      "quiz": [
+        {
+          "q": "Why do astronauts prebreathe pure oxygen before a spacewalk?",
+          "options": [
+            "To warm up the muscles",
+            "To make the suit lighter",
+            "To flush nitrogen and avoid decompression sickness",
+            "To save battery power"
+          ],
+          "answer": 2,
+          "why": "Nitrogen dissolved in the body can form bubbles when pressure drops, just like divers' decompression sickness."
+        },
+        {
+          "q": "Why are spacesuits kept at a much lower pressure than the cabin?",
+          "options": [
+            "Lower pressure makes the suit flexible enough to work in",
+            "Oxygen runs out faster at high pressure",
+            "Astronauts feel hotter at high pressure",
+            "It is cheaper"
+          ],
+          "answer": 0,
+          "why": "A highly pressurized suit is like an inflated balloon, stiff and exhausting to bend."
+        },
+        {
+          "q": "Why do astronauts train for spacewalks in huge underwater pools?",
+          "options": [
+            "To practice swimming",
+            "It is the only way to test suits for leaks",
+            "Water blocks radiation",
+            "Neutral buoyancy mimics weightlessness"
+          ],
+          "answer": 3,
+          "why": "Buoyancy cancels most of the weight of the suit and tools, giving a close approximation of floating."
+        }
+      ]
+    },
+    {
+      "id": "mission-ready",
+      "name": "Mission Ready",
+      "prereqs": [
+        "rendezvous-docking",
+        "life-support",
+        "eva-spacesuits",
+        "reentry"
+      ],
+      "x": 50,
+      "y": 12,
+      "pretest": "Your suit shows a minor warning in the middle of a spacewalk. What do you do first?",
+      "lesson": "Real missions chain every star together: launch, orbit, rendezvous, docking, work, undocking, deorbit, reentry, and recovery, each step planned and rehearsed. Safety comes from procedures and communication, not heroics. Crews use checklists and closed-loop communication: the receiver repeats the instruction back so errors get caught. Systems are redundant, because nobody can pop out for repairs. Calm, clear calls and following the plan keep problems small.",
+      "quiz": [
+        {
+          "q": "Which is the correct order for a typical mission?",
+          "options": [
+            "Reentry, launch, docking, deorbit burn",
+            "Deorbit burn, launch, docking, reentry",
+            "Docking, launch, reentry, undocking",
+            "Launch, rendezvous and docking, undocking, deorbit burn, reentry"
+          ],
+          "answer": 3,
+          "why": "You launch, rendezvous and dock, do your work, undock, burn to deorbit, and then enter the atmosphere."
+        },
+        {
+          "q": "Your suit shows a minor warning during a spacewalk. What is the best first response?",
+          "options": [
+            "Quietly fix it with duct tape",
+            "Take the suit off",
+            "Ignore it and keep working",
+            "Report it to the team and follow the procedure"
+          ],
+          "answer": 3,
+          "why": "Calling it out and following the checklist keeps everyone informed and handles problems while they are still small."
+        },
+        {
+          "q": "What is closed-loop communication?",
+          "options": [
+            "Talking only to yourself",
+            "The receiver repeats an instruction back to confirm it",
+            "Speaking only in code",
+            "Never using the radio"
+          ],
+          "answer": 1,
+          "why": "Repeating the instruction back lets the sender catch misunderstandings immediately."
+        }
+      ]
+    }
+  ]
 }

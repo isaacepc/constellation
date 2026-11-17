@@ -67,3 +67,22 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .night-sky::after { animation: none; }
 }
+
+/* Constellation star states */
+.star-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: star-pulse 1.8s ease-in-out infinite;
+}
+@keyframes star-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.35); opacity: 0.25; }
+}
+[role="button"]:focus-visible > circle:first-child {
+  stroke: #ffe9a8;
+  stroke-width: 2;
+  stroke-dasharray: 4 4;
+}
+@media (prefers-reduced-motion: reduce) {
+  .star-pulse { animation: none; }
+}

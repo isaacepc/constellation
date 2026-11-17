@@ -2,6 +2,374 @@
   "slug": "paleontologist",
   "title": "Paleontologist",
   "emoji": "🦖",
-  "tagline": "I want to dig up dinosaur bones and figure out how they lived.",
-  "stars": []
+  "tagline": "Dig up the past and read the story that Earth wrote in stone.",
+  "stars": [
+    {
+      "id": "deep-time",
+      "name": "Deep Time",
+      "prereqs": [],
+      "x": 18,
+      "y": 85,
+      "pretest": "Did Tyrannosaurus rex live closer in time to Stegosaurus, or closer to us?",
+      "lesson": "Earth is about 4.5 billion years old. Non-avian dinosaurs lived in the Mesozoic Era, roughly 230 to 66 million years ago, split into the Triassic, Jurassic, and Cretaceous periods. Modern humans appeared only about 300,000 years ago. The spans are so vast that Tyrannosaurus rex, from about 68 to 66 million years ago, lived closer in time to us than to Stegosaurus, which lived around 150 million years ago.",
+      "quiz": [
+        {
+          "q": "In which era did the non-avian dinosaurs live?",
+          "why": "The Mesozoic Era, about 230 to 66 million years ago, is the age of dinosaurs.",
+          "options": [
+            "The Mesozoic",
+            "The Cenozoic",
+            "The Ice Age",
+            "The Paleozoic"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "About how old is Earth?",
+          "why": "Radiometric dating of old rocks and meteorites puts Earth at about 4.5 billion years.",
+          "options": [
+            "4.5 million years",
+            "66 million years",
+            "10,000 years",
+            "4.5 billion years"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which statement is true?",
+          "why": "Stegosaurus is about 150 million years old and T. rex about 66, so T. rex is closer to today.",
+          "options": [
+            "Humans and T. rex overlapped for thousands of years",
+            "Stegosaurus lived after T. rex",
+            "T. rex lived closer in time to humans than to Stegosaurus",
+            "T. rex and Stegosaurus were neighbors"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "fossilization",
+      "name": "How Fossils Form",
+      "prereqs": [],
+      "x": 60,
+      "y": 85,
+      "pretest": "Most animals that ever lived left no fossil at all. What has to happen for one to be preserved?",
+      "lesson": "Most living things leave no trace. Fossilization needs fast burial in sediment, which shields remains from scavengers and decay, plus hard parts such as bones, teeth, or shells. Over time, minerals in groundwater seep in and replace or fill the tissue, a process called permineralization. Most fossils form in sedimentary rock, layers of mud and sand that harden. Because the conditions are rare, the fossil record is a small, biased sample of past life.",
+      "quiz": [
+        {
+          "q": "Why does fast burial help fossilization?",
+          "why": "Quick burial keeps scavengers, air, and bacteria away long enough for minerals to take over.",
+          "options": [
+            "It protects remains from scavengers and decay",
+            "It warms the bones",
+            "It makes bones heavier",
+            "It dissolves the soft parts into stone"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which body parts are most likely to fossilize?",
+          "why": "Hard parts survive far better than soft tissue, which is why the record is biased toward them.",
+          "options": [
+            "Skin and muscle",
+            "Blood",
+            "Hard parts like bones, teeth, and shells",
+            "Eyes and brain"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "In which kind of rock are most fossils found?",
+          "why": "Sedimentary layers bury remains gently. Heat and pressure in other rock types usually destroy fossils.",
+          "options": [
+            "Volcanic lava rock",
+            "Metamorphic marble",
+            "Sedimentary rock",
+            "Granite"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "rocks-and-layers",
+      "name": "Reading Rock Layers",
+      "prereqs": [
+        "deep-time"
+      ],
+      "x": 22,
+      "y": 62,
+      "pretest": "You dig down through a cliff. Which layers hold the oldest fossils, the top or the bottom?",
+      "lesson": "Sediment piles up layer by layer, so in an undisturbed stack the oldest layers are at the bottom and the youngest on top. This is the law of superposition. Index fossils, from species that were widespread but lived a short time, let you match layers across distant places. These methods give relative age, which is the order of events, not a number of years. Folding and faulting can scramble layers, so geologists check carefully.",
+      "quiz": [
+        {
+          "q": "In an undisturbed stack of sedimentary layers, where is the oldest layer?",
+          "why": "New sediment lands on top of old, so the bottom is oldest. This is the law of superposition.",
+          "options": [
+            "It depends on the color",
+            "At the bottom",
+            "At the top",
+            "In the middle"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What makes a good index fossil?",
+          "why": "A wide range lets you match distant layers, and a short lifespan pins down the age tightly.",
+          "options": [
+            "The biggest fossil",
+            "Any fossil found near water",
+            "A rare, long-lived species",
+            "A species that was widespread and short-lived"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What does relative dating tell you?",
+          "why": "Relative dating gives order. Numbers come from radiometric methods.",
+          "options": [
+            "Who found the fossil",
+            "The temperature of the past",
+            "The exact age in years",
+            "Which events came first, not exact ages"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "anatomy-and-identification",
+      "name": "Bones & Anatomy",
+      "prereqs": [
+        "fossilization"
+      ],
+      "x": 82,
+      "y": 62,
+      "pretest": "Look at two fossil teeth: one sharp and serrated, one flat and ridged. What can you tell about each animal's diet?",
+      "lesson": "Bones and teeth tell you how an animal lived. Sharp, serrated teeth suit slicing meat, while flat, ridged teeth grind plants. Comparative anatomy matches fossil bones to living animals to infer muscles and movement. Dinosaurs are grouped by their hip structure into lizard-hipped and bird-hipped types, and, surprisingly, birds descend from lizard-hipped theropods like the small, feathered dinosaurs. So birds are living dinosaurs.",
+      "quiz": [
+        {
+          "q": "What do sharp, serrated teeth usually indicate?",
+          "why": "Serrated blades slice flesh. Grinding teeth with flat ridges processed plants.",
+          "options": [
+            "Eating rocks",
+            "Eating meat",
+            "Eating only fish eggs",
+            "Eating leaves"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Birds are the living descendants of which dinosaur group?",
+          "why": "Feathered theropod dinosaurs gave rise to birds, so birds are technically dinosaurs.",
+          "options": [
+            "Sauropods",
+            "Stegosaurs",
+            "Theropods",
+            "Ceratopsians"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Why compare fossil bones with living animals?",
+          "why": "Similar bones in living species suggest similar muscles and function in extinct ones.",
+          "options": [
+            "Living animals are identical to fossils",
+            "Fossils cannot be compared",
+            "It saves time on dating",
+            "Shared structures help infer muscles and movement"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "field-work",
+      "name": "Fieldwork",
+      "prereqs": [
+        "fossilization",
+        "rocks-and-layers"
+      ],
+      "x": 50,
+      "y": 62,
+      "pretest": "You spot a bone sticking out of a hillside. What is the first thing you should do before touching it?",
+      "lesson": "Fossils must be found, recorded, and protected. Paleontologists search exposed sedimentary rock of the right age, like badlands. Before removing a fossil, they photograph it in place and record its exact location and layer, because context matters as much as the bone. Fragile finds are wrapped in burlap and plaster jackets for transport. On public land you usually need a permit, since fossils are protected resources.",
+      "quiz": [
+        {
+          "q": "What should you do before moving a fossil?",
+          "why": "Context tells you the age and environment. Once it is moved, that information is lost.",
+          "options": [
+            "Scrub it clean on site",
+            "Photograph it in place and record its location and layer",
+            "Pull it out quickly",
+            "Leave it unmarked"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What is a plaster jacket for?",
+          "why": "Plaster and burlap form a hard shell that keeps the fossil and the rock around it together.",
+          "options": [
+            "Protecting a fragile fossil during transport",
+            "Making it look better",
+            "Cleaning the bone",
+            "Dating the fossil"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where is a good place to look for dinosaur fossils?",
+          "why": "You need rock from the Mesozoic that has been eroded to expose it.",
+          "options": [
+            "Exposed sedimentary rock of the right age, such as badlands",
+            "Beach sand from last year",
+            "Fresh volcanic lava fields",
+            "City parks"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "radiometric-dating",
+      "name": "Radiometric Dating",
+      "prereqs": [
+        "rocks-and-layers"
+      ],
+      "x": 22,
+      "y": 38,
+      "pretest": "Carbon dating is famous, so why can it not date a dinosaur bone?",
+      "lesson": "Radioactive atoms decay at a steady rate. A half-life is the time for half of them to decay. Carbon-14 has a half-life of 5,730 years, so it works only up to roughly 50,000 years and only on once-living material. Dinosaur fossils are millions of years old, so scientists date volcanic ash layers above and below them using isotopes like uranium or potassium-argon, which decay much more slowly. The fossil's age is bracketed between the two.",
+      "quiz": [
+        {
+          "q": "What is a half-life?",
+          "why": "Decay is steady and predictable, which makes it a clock.",
+          "options": [
+            "Half the age of the Earth",
+            "The time for half of a radioactive sample to decay",
+            "Half a day",
+            "The time for a fossil to form"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Why can carbon-14 not date dinosaur bones?",
+          "why": "Carbon-14 is useful to about 50,000 years. Dinosaurs lived millions of years ago.",
+          "options": [
+            "Dinosaurs lived too recently",
+            "They are far older than carbon-14 can measure",
+            "Bones contain no carbon",
+            "Carbon-14 only works on rocks"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "How do scientists usually date a dinosaur fossil?",
+          "why": "Ash layers contain isotopes that can be dated, so the fossil's age falls between the two dates.",
+          "options": [
+            "Dating volcanic ash layers above and below it",
+            "Asking other fossils",
+            "Counting its rings",
+            "Weighing the bone"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "evolution-and-phylogeny",
+      "name": "Evolution & Family Trees",
+      "prereqs": [
+        "anatomy-and-identification"
+      ],
+      "x": 82,
+      "y": 38,
+      "pretest": "How could you tell whether two fossil species are close relatives?",
+      "lesson": "Evolution by natural selection works like this: individuals vary, some traits are inherited, and those that help survival and reproduction become more common. Over time, populations change and split into new species. Scientists reconstruct this history with phylogenetic trees, grouping species by shared derived traits, new features inherited from a common ancestor. Feathers, for example, link many theropods with birds. A tree is a hypothesis, updated as new fossils appear.",
+      "quiz": [
+        {
+          "q": "What does a phylogenetic tree show?",
+          "why": "Branches show common ancestry. Closer branches mean more recent shared ancestors.",
+          "options": [
+            "Evolutionary relationships among species",
+            "How tall the species were",
+            "Which species ate each other",
+            "Where fossils were found"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is needed for natural selection to change a population?",
+          "why": "Traits must be inherited and affect reproductive success. Effort during life is not inherited.",
+          "options": [
+            "A sudden decision to evolve",
+            "Larger body size",
+            "Heritable variation and differences in survival or reproduction",
+            "Animals trying harder"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which are the best clues that two species are close relatives?",
+          "why": "Shared new traits point to a common ancestor that first had them.",
+          "options": [
+            "Having the same color",
+            "Living in the same place",
+            "Shared derived traits",
+            "Having the same size"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "mass-extinctions",
+      "name": "Mass Extinctions",
+      "prereqs": [
+        "radiometric-dating",
+        "evolution-and-phylogeny",
+        "field-work"
+      ],
+      "x": 50,
+      "y": 12,
+      "pretest": "What do you think wiped out the non-avian dinosaurs 66 million years ago, and how would anyone prove it?",
+      "lesson": "Earth has had five major mass extinctions. The one that ended the non-avian dinosaurs, about 66 million years ago, followed a large asteroid impact at Chicxulub on Mexico's Yucatan Peninsula. Evidence includes a worldwide clay layer rich in iridium, an element common in asteroids, plus a buried crater. About three quarters of species vanished, but birds, small mammals, and other survivors persisted. The worst extinction, about 252 million years ago, ended the Permian.",
+      "quiz": [
+        {
+          "q": "What worldwide evidence supports the asteroid impact at the end of the Cretaceous?",
+          "why": "Iridium is rare in Earth's crust but common in asteroids. The layer appears around the world at the same time.",
+          "options": [
+            "Ice age scratches",
+            "A layer of gold coins",
+            "Volcano-free rocks",
+            "A thin layer of clay rich in iridium"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which dinosaurs survived the extinction?",
+          "why": "Birds are living dinosaurs and survived the event.",
+          "options": [
+            "Triceratops",
+            "Tyrannosaurs",
+            "Sauropods",
+            "Birds"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which extinction was the worst in Earth's history?",
+          "why": "The end-Permian extinction wiped out about 90 percent of marine species.",
+          "options": [
+            "The end-Cretaceous",
+            "The end-Permian, about 252 million years ago",
+            "The one that ended the Triassic",
+            "The Ice Age"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
 }

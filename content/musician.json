@@ -1,7 +1,376 @@
 {
   "slug": "musician",
   "title": "Musician",
-  "emoji": "🎸",
-  "tagline": "I want to play songs that get everyone singing along.",
-  "stars": []
+  "emoji": "🎤",
+  "tagline": "Learn how music works, then learn how to make it yours.",
+  "stars": [
+    {
+      "id": "rhythm-and-pulse",
+      "name": "Rhythm & Pulse",
+      "prereqs": [],
+      "x": 15,
+      "y": 85,
+      "pretest": "Tap your foot along to a song. What are you keeping track of?",
+      "lesson": "Rhythm is how sounds are placed in time. The beat is the steady pulse you tap your foot to, and tempo is how fast it goes, measured in beats per minute (BPM). Beats are grouped into measures by the meter. In 4/4 time there are four beats per measure, and the quarter note gets one beat. A half note lasts two beats, a whole note four, and rests are silences with the same lengths. Counting aloud keeps you steady.",
+      "quiz": [
+        {
+          "q": "What does 4/4 time mean?",
+          "why": "The top number is beats per measure, and the bottom number tells which note value gets the beat.",
+          "options": [
+            "Four notes per song",
+            "Four instruments",
+            "Four measures per song",
+            "Four beats per measure, with the quarter note getting one beat"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "How is tempo measured?",
+          "why": "Higher BPM means a faster tempo.",
+          "options": [
+            "In measures per song",
+            "In octaves",
+            "In beats per minute (BPM)",
+            "In decibels"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "In 4/4 time, how many beats does a half note last?",
+          "why": "A quarter note is one beat, and a half note is twice as long.",
+          "options": [
+            "One",
+            "Three",
+            "Two",
+            "Four"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "pitch-and-notes",
+      "name": "Pitch & Notes",
+      "prereqs": [],
+      "x": 60,
+      "y": 85,
+      "pretest": "What makes one note sound higher than another?",
+      "lesson": "Pitch is how high or low a note sounds, and it depends on frequency, the number of vibrations per second. The standard tuning note, A above middle C, is 440 Hz. Doubling the frequency gives the same note one octave higher. An octave is divided into 12 equal steps called semitones, and the 12 notes repeat in every octave. Letters A through G name the natural notes, and sharps and flats name the notes in between.",
+      "quiz": [
+        {
+          "q": "What does doubling a note's frequency produce?",
+          "why": "Octaves have a 2:1 frequency ratio, which is why they sound alike.",
+          "options": [
+            "A note one semitone higher",
+            "The same note one octave higher",
+            "A different note entirely",
+            "A quieter note"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "How many semitones are in an octave?",
+          "why": "There are 12 equal semitone steps from a note to its octave.",
+          "options": [
+            "10",
+            "7",
+            "8",
+            "12"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What is the standard tuning pitch A4?",
+          "why": "Orchestras tune to A at 440 Hz.",
+          "options": [
+            "220,000 Hz",
+            "1,000 Hz",
+            "100 Hz",
+            "440 Hz"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "practice-science",
+      "name": "How to Practice",
+      "prereqs": [
+        "rhythm-and-pulse"
+      ],
+      "x": 12,
+      "y": 62,
+      "pretest": "You keep messing up the same two measures. Do you play the whole song faster, or something else?",
+      "lesson": "Research on skill learning shows how to practice well. Deliberate practice targets what you cannot do yet. Isolate the hard measure, then play it slowly enough to be perfect, because repeated mistakes teach mistakes. Use a metronome, and speed up in small steps. Short daily sessions beat one long weekly session, and sleep helps the brain consolidate what you practiced. Test yourself by playing from memory, which strengthens recall.",
+      "quiz": [
+        {
+          "q": "What is the best way to fix a difficult passage?",
+          "why": "Slow, correct repetitions build accurate habits. Fast sloppy ones build mistakes.",
+          "options": [
+            "Skip it",
+            "Isolate it and play it slowly and correctly",
+            "Play it louder",
+            "Play the whole piece faster"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which schedule usually works better?",
+          "why": "Spaced practice gives your brain time to consolidate.",
+          "options": [
+            "Never practicing the same thing twice",
+            "One long session per week",
+            "Short sessions every day",
+            "Practicing only before concerts"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What does a metronome help with?",
+          "why": "A metronome gives an objective beat so you can raise speed in small steps.",
+          "options": [
+            "Tuning the instrument",
+            "Steady tempo and gradual speed increases",
+            "Playing louder",
+            "Reading notes"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "reading-notation",
+      "name": "Reading Music",
+      "prereqs": [
+        "rhythm-and-pulse",
+        "pitch-and-notes"
+      ],
+      "x": 38,
+      "y": 62,
+      "pretest": "How could a few black dots on lines tell a stranger exactly which notes to play?",
+      "lesson": "Notation writes music down. Notes sit on a staff of five lines and four spaces; higher on the staff means higher pitch. The clef sets the reference: the treble clef's lines, bottom to top, are E, G, B, D, F. The time signature sits at the start, with the top number showing beats per measure. Dynamics, such as p (soft, piano) and f (loud, forte), show volume. Reading becomes fast with daily practice, like learning a language.",
+      "quiz": [
+        {
+          "q": "What are the treble clef lines from bottom to top?",
+          "why": "A common memory phrase is Every Good Boy Does Fine.",
+          "options": [
+            "A, B, C, D, E",
+            "C, E, G, B, D",
+            "E, G, B, D, F",
+            "F, A, C, E, G"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What does the top number in a time signature show?",
+          "why": "In 3/4, for example, each measure has three beats.",
+          "options": [
+            "The volume",
+            "The tempo",
+            "The key",
+            "The number of beats per measure"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What does f mean in music?",
+          "why": "Dynamics show volume. f is loud and p is soft.",
+          "options": [
+            "Forte, or loud",
+            "Flat",
+            "Fast",
+            "Finish"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "scales-and-keys",
+      "name": "Scales & Keys",
+      "prereqs": [
+        "pitch-and-notes"
+      ],
+      "x": 62,
+      "y": 62,
+      "pretest": "Why do most songs sound like they have a 'home' note that feels like the end?",
+      "lesson": "A scale is an ordered set of notes. The major scale follows a pattern of whole steps (W) and half steps (H): W W H W W W H. Starting on C, the pattern lands on only white keys, so C major has no sharps or flats. The first note is the tonic, the home note that feels like rest. A key is the scale a piece is built on, and the key signature shows which notes are sharp or flat.",
+      "quiz": [
+        {
+          "q": "What is the major scale step pattern?",
+          "why": "Whole and half steps in that order give the bright major sound.",
+          "options": [
+            "W H W H W H W",
+            "W W H W W W H",
+            "W W W W H H H",
+            "H H W W H H W"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "How many sharps or flats are in C major?",
+          "why": "C major uses only the white keys of a piano.",
+          "options": [
+            "None",
+            "Seven",
+            "One",
+            "Three"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is the tonic?",
+          "why": "The tonic feels like the resting place that the other notes lead to.",
+          "options": [
+            "The first note of the scale, the home note",
+            "The last chord of the song",
+            "The highest note",
+            "The loudest note"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "ear-training",
+      "name": "Ear Training",
+      "prereqs": [
+        "pitch-and-notes"
+      ],
+      "x": 85,
+      "y": 62,
+      "pretest": "Can you hum back a note you just heard? How would you get better at it?",
+      "lesson": "Ear training connects what you hear to what you play. An interval is the distance between two notes. A major third is 4 semitones, and a perfect fifth is 7. Learning to recognize intervals lets you pick out melodies by ear and sing what you see on the page. The best method is short and regular: sing intervals back, identify them with a partner or app, and build up gradually. Relative pitch is a skill, not a gift.",
+      "quiz": [
+        {
+          "q": "How many semitones are in a major third?",
+          "why": "A major third spans 4 semitones, and a minor third spans 3.",
+          "options": [
+            "4",
+            "2",
+            "7",
+            "5"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How many semitones are in a perfect fifth?",
+          "why": "A perfect fifth spans 7 semitones.",
+          "options": [
+            "12",
+            "7",
+            "5",
+            "3"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What is the best way to build relative pitch?",
+          "why": "Relative pitch is trained through repetition, like any skill.",
+          "options": [
+            "Short, regular sessions of singing and identifying intervals",
+            "Avoiding practice",
+            "Hearing it only once",
+            "Waiting until you are naturally gifted"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "chords-and-harmony",
+      "name": "Chords & Harmony",
+      "prereqs": [
+        "scales-and-keys"
+      ],
+      "x": 62,
+      "y": 38,
+      "pretest": "Play three notes at once. What decides whether they sound happy or sad?",
+      "lesson": "A chord is three or more notes played together. A triad stacks the root, a third above it, and a fifth above it. A C major triad is C, E, G. Lowering the third by a semitone makes it minor, giving the sadder sound of C, E-flat, G. Harmony is how chords move: a chord progression like I, V, vi, IV is used in countless pop songs. Chords create tension that resolves back to the tonic.",
+      "quiz": [
+        {
+          "q": "Which notes make a C major triad?",
+          "why": "A major triad is a root, a major third, and a perfect fifth.",
+          "options": [
+            "C, D, E",
+            "C, F, A",
+            "C, E-flat, G",
+            "C, E, G"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What makes a triad minor?",
+          "why": "Lowering the third by one semitone changes the sound from major to minor.",
+          "options": [
+            "A faster tempo",
+            "A lowered third",
+            "A raised fifth",
+            "A higher root"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What does a chord progression do?",
+          "why": "Progressions create tension and resolution, and the tonic feels like home.",
+          "options": [
+            "Tunes the instrument",
+            "Writes the lyrics",
+            "Changes the tempo",
+            "Moves through chords to build and release tension"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "performance-and-composition",
+      "name": "Perform & Create",
+      "prereqs": [
+        "chords-and-harmony",
+        "ear-training",
+        "practice-science",
+        "reading-notation"
+      ],
+      "x": 45,
+      "y": 12,
+      "pretest": "You are on stage and you hit a wrong note. What do you do?",
+      "lesson": "Putting it all together means making music for other people. Compose by combining rhythm, melody, and chords: pick a key, write a short progression, then shape a melody over it. Songs often use sections, like verse and chorus, for contrast. When you perform, keep going through mistakes, because the audience hears the music, not your errors. Record yourself to get honest feedback. Nerves are normal, and practice runs, deep breaths, and play-throughs help.",
+      "quiz": [
+        {
+          "q": "What is the best response to a wrong note on stage?",
+          "why": "Audiences rarely notice small mistakes, and stopping draws attention to them.",
+          "options": [
+            "Walk off",
+            "Stop and restart",
+            "Keep going and stay with the music",
+            "Apologize to the audience"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Why record yourself practicing?",
+          "why": "You hear things on playback that you miss while playing.",
+          "options": [
+            "It gives honest, objective feedback",
+            "It is required for concerts",
+            "It improves the tone",
+            "It replaces practice"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is a simple first step to composing a song?",
+          "why": "A progression gives you a harmonic foundation for a melody.",
+          "options": [
+            "Buy a new instrument",
+            "Wait for inspiration",
+            "Choose a key and write a short chord progression",
+            "Write the final lyrics"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
 }

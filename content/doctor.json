@@ -1,7 +1,376 @@
 {
   "slug": "doctor",
-  "title": "Doctor",
+  "title": "Doctor / Vet",
   "emoji": "🩺",
-  "tagline": "I want to figure out what's wrong and help people feel better.",
-  "stars": []
+  "tagline": "Listen, figure out what is wrong, and help. The science works for two legs or four.",
+  "stars": [
+    {
+      "id": "body-systems",
+      "name": "Body Systems",
+      "prereqs": [],
+      "x": 15,
+      "y": 85,
+      "pretest": "How does oxygen get from the air to your toes?",
+      "lesson": "The body is a set of systems working together. The respiratory system takes in oxygen and removes carbon dioxide. The circulatory system, the heart and blood vessels, delivers oxygen and nutrients to every cell. The digestive system breaks down food, the kidneys filter blood and balance fluids, and the nervous system coordinates everything. Together they maintain homeostasis, keeping conditions such as temperature and blood chemistry stable. Mammals, including pets and farm animals, share most of this design.",
+      "quiz": [
+        {
+          "q": "What is homeostasis?",
+          "why": "The body constantly adjusts temperature, fluids, and chemistry to stay in a narrow healthy range.",
+          "options": [
+            "Keeping internal conditions stable",
+            "Growing taller",
+            "Fighting infection only",
+            "Falling asleep"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which system delivers oxygen to cells?",
+          "why": "The heart pumps blood carrying oxygen from the lungs to tissues.",
+          "options": [
+            "The digestive system",
+            "The reproductive system",
+            "The skeletal system",
+            "The circulatory system"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What do the kidneys mainly do?",
+          "why": "Kidneys clean the blood, remove wastes, and regulate water and salts.",
+          "options": [
+            "Digest food",
+            "Store oxygen",
+            "Filter blood and balance fluids",
+            "Make blood cells in the arms"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "vital-signs",
+      "name": "Vital Signs",
+      "prereqs": [],
+      "x": 65,
+      "y": 85,
+      "pretest": "What numbers would you check first to tell if someone is seriously ill?",
+      "lesson": "Vital signs are the quick numbers of health. In a resting adult, normal heart rate is about 60 to 100 beats per minute, breathing is about 12 to 20 breaths per minute, and body temperature is around 37 degrees Celsius (98.6 Fahrenheit). Blood pressure is written as two numbers, such as 120/80: the pressure when the heart beats (systolic) over the pressure when it rests (diastolic). Trends over time matter more than a single reading.",
+      "quiz": [
+        {
+          "q": "What is a normal resting heart rate for an adult?",
+          "why": "That is the typical range for a healthy resting adult.",
+          "options": [
+            "10 to 30",
+            "300 or more",
+            "150 to 200",
+            "About 60 to 100 beats per minute"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "In a reading of 120/80, what is the top number?",
+          "why": "Systolic is the peak pressure during a heartbeat, and diastolic is the pressure between beats.",
+          "options": [
+            "Heart rate",
+            "Temperature",
+            "Diastolic pressure",
+            "Systolic pressure, when the heart beats"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which is more informative?",
+          "why": "Trends show whether a patient is improving or getting worse.",
+          "options": [
+            "The patient's guess",
+            "The number on the thermometer box",
+            "A pattern of readings over time",
+            "One single reading"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "history-and-exam",
+      "name": "History & Exam",
+      "prereqs": [
+        "body-systems"
+      ],
+      "x": 12,
+      "y": 62,
+      "pretest": "A patient says their stomach hurts. What would you ask before touching them?",
+      "lesson": "Most diagnoses come from listening. The medical history asks about symptoms, when they began, what makes them better or worse, and past illnesses. The physical exam uses four skills: inspection (look), palpation (feel), percussion (tap), and auscultation (listen, usually with a stethoscope). Notes are often written in SOAP form: Subjective (what the patient says), Objective (what you find), Assessment (what you think is going on), and Plan (what to do). With animals, the owner gives the history.",
+      "quiz": [
+        {
+          "q": "Which source gives the most diagnostic information?",
+          "why": "A careful history often points to the diagnosis before any test.",
+          "options": [
+            "A random blood test",
+            "The waiting room",
+            "The doctor's guess",
+            "The patient's history"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What are the four parts of a SOAP note?",
+          "why": "SOAP organizes what the patient reports, what you find, your assessment, and your plan.",
+          "options": [
+            "Scan, Order, Analyze, Prescribe",
+            "Symptoms, Observations, Answers, Prescriptions",
+            "Subjective, Objective, Assessment, Plan",
+            "Surgery, Observation, Aftercare, Prognosis"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What is auscultation?",
+          "why": "Palpation is feeling, percussion is tapping, and auscultation is listening.",
+          "options": [
+            "Taking an X-ray",
+            "Listening, usually with a stethoscope",
+            "Feeling with the hands",
+            "Tapping on the body"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "pharmacology-basics",
+      "name": "Medicine Basics",
+      "prereqs": [
+        "body-systems"
+      ],
+      "x": 32,
+      "y": 62,
+      "pretest": "A patient with a cold asks for antibiotics. Should they get them?",
+      "lesson": "Drugs change how the body works, and every drug has benefits and risks. Dose matters: too little does nothing, too much harms. Half-life is how long it takes the body to clear half a drug, which sets how often it must be taken. Antibiotics kill bacteria and do not work on viruses like colds and flu. Overusing them breeds resistant bacteria. Always check allergies and other medicines, since some drugs interact.",
+      "quiz": [
+        {
+          "q": "Do antibiotics work against viruses like the common cold?",
+          "why": "Viruses are different from bacteria, so antibiotics do not affect them.",
+          "options": [
+            "Only if the dose is doubled",
+            "No, they only work on bacteria",
+            "Only in children",
+            "Yes, always"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Why is overusing antibiotics a problem?",
+          "why": "Surviving bacteria multiply and pass on resistance.",
+          "options": [
+            "It makes viruses stronger",
+            "It raises blood pressure",
+            "It breeds resistant bacteria",
+            "It makes bones weaker"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What does half-life tell you about a drug?",
+          "why": "Half-life helps set the dosing schedule.",
+          "options": [
+            "How bitter it tastes",
+            "How long the body takes to clear half of it",
+            "How long it can be stored",
+            "How much it costs"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "infection-and-immunity",
+      "name": "Infection & Immunity",
+      "prereqs": [
+        "body-systems"
+      ],
+      "x": 52,
+      "y": 62,
+      "pretest": "How does a vaccine protect you from an illness without making you sick?",
+      "lesson": "Germs such as bacteria, viruses, fungi, and parasites can cause infection. The immune system fights back with white blood cells and antibodies, proteins that recognize specific invaders. A vaccine safely shows the immune system a harmless piece or weakened form of a germ so it can build memory, and respond quickly if the real germ arrives. When many people are immune, the disease spreads less, which protects those who cannot be vaccinated. Handwashing remains one of the best defenses.",
+      "quiz": [
+        {
+          "q": "How do vaccines work?",
+          "why": "Vaccines build immune memory without causing the full disease.",
+          "options": [
+            "They kill all germs in the body forever",
+            "They make you immune to everything",
+            "They train the immune system to recognize a germ safely",
+            "They replace white blood cells"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What are antibodies?",
+          "why": "Antibodies bind to a particular germ and help destroy it.",
+          "options": [
+            "Proteins that recognize specific invaders",
+            "Tiny machines in medicine",
+            "Types of bacteria",
+            "Part of the stomach"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which simple habit prevents many infections?",
+          "why": "Handwashing removes germs before they can spread.",
+          "options": [
+            "Handwashing",
+            "Skipping meals",
+            "Avoiding sunlight",
+            "Staying up late"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "first-aid-emergency",
+      "name": "First Aid & Emergencies",
+      "prereqs": [
+        "vital-signs"
+      ],
+      "x": 85,
+      "y": 62,
+      "pretest": "Someone collapses and is not breathing. What are the first few things you do?",
+      "lesson": "In an emergency, check that the scene is safe, then call emergency services. Follow ABC: Airway, Breathing, Circulation. For an adult in cardiac arrest, start CPR: push hard and fast in the center of the chest, about 100 to 120 compressions per minute and roughly 5 cm (2 inches) deep, letting the chest rise between pushes. For severe bleeding, apply firm direct pressure. Learning first aid from a certified course makes you far more confident.",
+      "quiz": [
+        {
+          "q": "What do the letters ABC stand for in emergency care?",
+          "why": "Open the airway, make sure there is breathing, then support circulation.",
+          "options": [
+            "Alert, Bandage, Call",
+            "Airway, Breathing, Circulation",
+            "Accident, Bleeding, Cough",
+            "Aid, Blood, Care"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "How fast should chest compressions be for adult CPR?",
+          "why": "That rate keeps blood moving effectively.",
+          "options": [
+            "About 100 to 120 per minute",
+            "About 200 per minute",
+            "About 60 per minute",
+            "About 20 per minute"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is the first response to severe bleeding?",
+          "why": "Direct pressure slows the bleeding while help arrives.",
+          "options": [
+            "Apply firm direct pressure",
+            "Raise the person's head and wait",
+            "Give them food",
+            "Wash the wound for ten minutes"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "clinical-reasoning",
+      "name": "Clinical Reasoning",
+      "prereqs": [
+        "history-and-exam",
+        "vital-signs"
+      ],
+      "x": 35,
+      "y": 38,
+      "pretest": "A patient has a cough and a fever. List three possible causes, from most to least likely.",
+      "lesson": "Diagnosis is detective work. A differential diagnosis is a list of possible causes, ordered by how likely and how dangerous they are. Remember: when you hear hoofbeats, think horses, not zebras. Common things are common, but do not miss serious rare ones. Tests are imperfect, with false positives and false negatives, so interpret them using the patient's story. Beware anchoring bias: sticking to your first idea even when new evidence points elsewhere.",
+      "quiz": [
+        {
+          "q": "What is a differential diagnosis?",
+          "why": "It keeps several possibilities in mind while you gather evidence.",
+          "options": [
+            "A type of surgery",
+            "A list of possible causes ranked by likelihood and danger",
+            "The final bill",
+            "A second opinion"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What does 'when you hear hoofbeats, think horses' mean?",
+          "why": "Base rates matter. Common causes should be considered first.",
+          "options": [
+            "Always suspect rare diseases",
+            "Common explanations are more likely than rare ones",
+            "Check the patient's feet",
+            "Avoid diagnosis"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What is anchoring bias?",
+          "why": "Good clinicians update their thinking when facts change.",
+          "options": [
+            "Using an anchor in surgery",
+            "Ordering too many tests",
+            "Writing too many notes",
+            "Sticking to your first idea despite new evidence"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "ethics-and-communication",
+      "name": "Care & Ethics",
+      "prereqs": [
+        "clinical-reasoning",
+        "pharmacology-basics",
+        "infection-and-immunity",
+        "first-aid-emergency"
+      ],
+      "x": 55,
+      "y": 12,
+      "pretest": "A patient refuses a treatment you believe is best. What should you do?",
+      "lesson": "Medicine is as much about people as science. Four ethical principles guide care: autonomy (patients choose for themselves), beneficence (do good), non-maleficence (do no harm), and justice (be fair). Informed consent means explaining the risks, benefits, and options in plain words, then respecting the choice. Patient information is kept confidential. Good doctors listen, show empathy, check understanding, and deliver bad news clearly and kindly. With animals, owners decide, and the animal's welfare comes first.",
+      "quiz": [
+        {
+          "q": "What does autonomy mean in medical ethics?",
+          "why": "Respecting autonomy means informing patients and honoring their choices.",
+          "options": [
+            "Patients have the right to make their own decisions",
+            "Patients cannot refuse treatment",
+            "The doctor always decides",
+            "Hospitals set every rule"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is informed consent?",
+          "why": "Consent is valid only when the patient understands.",
+          "options": [
+            "A doctor's private decision",
+            "A fee waiver",
+            "Signing a form without reading it",
+            "Explaining risks, benefits, and options, then respecting the patient's choice"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Why is patient confidentiality important?",
+          "why": "People share sensitive facts only when they trust that they are protected.",
+          "options": [
+            "It lets doctors skip notes",
+            "It is only for famous patients",
+            "It builds the trust needed for patients to be honest",
+            "It reduces costs"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
 }

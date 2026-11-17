@@ -1,7 +1,465 @@
 {
   "slug": "entrepreneur",
   "title": "Entrepreneur",
-  "emoji": "💡",
-  "tagline": "I want to start my own business and be my own boss.",
-  "stars": []
+  "emoji": "💰",
+  "tagline": "Turn an idea into a business that actually pays you. Includes the money and tax basics (US-focused).",
+  "stars": [
+    {
+      "id": "problem-and-customer",
+      "name": "Problem & Customer",
+      "prereqs": [],
+      "x": 15,
+      "y": 85,
+      "pretest": "You have a business idea. Before building anything, what is the most useful first step?",
+      "lesson": "Great businesses solve a real problem for specific people. Before building, talk to those people. Ask about their past behavior: what they did last time they had the problem, what they tried, what it cost them. Opinions about your idea are cheap and polite; stories about real spending and real frustration are evidence. If nobody has the problem often enough to pay for a fix, the idea is not ready, however clever it feels.",
+      "quiz": [
+        {
+          "q": "What is the best first step for a new business idea?",
+          "options": [
+            "Design a logo",
+            "Rent an office",
+            "Build the full product",
+            "Talk to potential customers about their problem"
+          ],
+          "answer": 3,
+          "why": "Conversations reveal whether the problem is real and painful before you spend time or money."
+        },
+        {
+          "q": "Which interview question gives the most reliable information?",
+          "options": [
+            "Do you like my idea?",
+            "Tell me about the last time you dealt with this problem.",
+            "Would you buy my product?",
+            "How much would you pay in theory?"
+          ],
+          "answer": 1,
+          "why": "Questions about real past behavior beat hypothetical opinions, which people tend to answer politely and unreliably."
+        },
+        {
+          "q": "Which is the strongest sign of a real problem?",
+          "options": [
+            "People say it is a cool idea",
+            "People are already spending time or money on workarounds",
+            "Your friends agree with you",
+            "It is trending on social media"
+          ],
+          "answer": 1,
+          "why": "Existing spending on workarounds shows the pain is real enough to pay to solve."
+        }
+      ]
+    },
+    {
+      "id": "revenue-vs-profit",
+      "name": "Revenue vs. Profit",
+      "prereqs": [],
+      "x": 50,
+      "y": 85,
+      "pretest": "A shop sold $10,000 this month. Is that how much the owner made?",
+      "lesson": "Revenue is the money coming in from sales. Profit is what is left after subtracting costs: revenue minus costs equals profit. A business can have impressive revenue and still lose money if costs are too high. Gross profit subtracts only the direct costs of making the product; net profit subtracts everything, including rent, software, marketing, and taxes. Owners should always track profit, not just sales.",
+      "quiz": [
+        {
+          "q": "A business has $10,000 in sales and $7,000 in total costs. What is the profit?",
+          "options": [
+            "$3,000",
+            "$7,000",
+            "$17,000",
+            "$10,000"
+          ],
+          "answer": 0,
+          "why": "Profit equals revenue minus costs: 10,000 - 7,000 = 3,000."
+        },
+        {
+          "q": "Can a business have high revenue and still lose money?",
+          "options": [
+            "No, revenue is always profit",
+            "Only in the first week",
+            "Yes, if costs are greater than revenue",
+            "Only if it is a nonprofit"
+          ],
+          "answer": 2,
+          "why": "Revenue only measures sales. If costs exceed it, the business loses money."
+        },
+        {
+          "q": "What does net profit subtract from revenue?",
+          "options": [
+            "Nothing",
+            "All costs, including rent, software, and marketing",
+            "Only taxes",
+            "Only the direct cost of making the product"
+          ],
+          "answer": 1,
+          "why": "Net profit is the bottom line after every cost. Gross profit subtracts only direct production costs."
+        }
+      ]
+    },
+    {
+      "id": "business-structures",
+      "name": "Business Structures",
+      "prereqs": [],
+      "x": 85,
+      "y": 85,
+      "pretest": "What is the legal difference between you and your business?",
+      "lesson": "In the US, a sole proprietorship is the default: you and the business are legally the same, so business debts and lawsuits can reach your personal assets. An LLC generally separates personal and business liability and is simple to run. Both are usually pass-through: profits are taxed on your personal return, not at the business level. S-corps and C-corps add complexity and different tax rules. Many solo founders start as a sole proprietor or LLC.",
+      "quiz": [
+        {
+          "q": "Which structure is the default for a solo owner who has filed nothing?",
+          "options": [
+            "S-corporation",
+            "C-corporation",
+            "Sole proprietorship",
+            "Nonprofit"
+          ],
+          "answer": 2,
+          "why": "Doing business alone without forming anything makes you a sole proprietor by default."
+        },
+        {
+          "q": "What does an LLC generally give an owner?",
+          "options": [
+            "Guaranteed customers",
+            "Free legal help",
+            "No taxes",
+            "Separation of personal assets from business liabilities"
+          ],
+          "answer": 3,
+          "why": "Limited liability is the main point: business debts generally cannot reach your personal assets."
+        },
+        {
+          "q": "What does pass-through taxation mean?",
+          "options": [
+            "Profits are taxed on the owner's personal return",
+            "The business pays no tax and neither do you",
+            "The government passes the tax to a bank",
+            "Customers pay your tax"
+          ],
+          "answer": 0,
+          "why": "The business itself does not pay income tax. Profit flows through to the owners' personal returns."
+        }
+      ]
+    },
+    {
+      "id": "unit-economics-pricing",
+      "name": "Pricing & Margins",
+      "prereqs": [
+        "revenue-vs-profit"
+      ],
+      "x": 38,
+      "y": 62,
+      "pretest": "A mug costs you $12 to make. You sell it for $20. What percent of the sale price is your margin?",
+      "lesson": "Unit economics ask: does each sale make money? Contribution per unit is price minus variable cost. Margin is that profit as a percent of price: (20 - 12) / 20 = 40%. Markup is profit as a percent of cost: 8 / 12, about 67%. They are not the same, and mixing them up causes pricing mistakes. Set prices on the value customers get, not only your cost, and make sure each sale leaves room to cover fixed costs.",
+      "quiz": [
+        {
+          "q": "A product costs $12 to make and sells for $20. What is the margin?",
+          "options": [
+            "60%",
+            "67%",
+            "8%",
+            "40%"
+          ],
+          "answer": 3,
+          "why": "Margin is profit divided by price: 8 / 20 = 40%."
+        },
+        {
+          "q": "Same product: what is the markup?",
+          "options": [
+            "20%",
+            "40%",
+            "67%",
+            "100%"
+          ],
+          "answer": 2,
+          "why": "Markup is profit divided by cost: 8 / 12, about 67%."
+        },
+        {
+          "q": "Why is pricing only by cost risky?",
+          "options": [
+            "Costs never change",
+            "It ignores the value customers get and may leave money on the table",
+            "It is illegal",
+            "It makes products worse"
+          ],
+          "answer": 1,
+          "why": "Customers pay for the value they receive, which can be far above or below your cost."
+        }
+      ]
+    },
+    {
+      "id": "break-even",
+      "name": "Break-Even",
+      "prereqs": [
+        "unit-economics-pricing"
+      ],
+      "x": 38,
+      "y": 40,
+      "pretest": "Your monthly fixed costs are $600 and each sale earns you $8. How many sales until you stop losing money?",
+      "lesson": "Fixed costs, such as rent or software subscriptions, stay the same however much you sell. Variable costs, such as materials or shipping, rise with each sale. Break-even units equal fixed costs divided by contribution per unit: 600 / 8 = 75 sales a month. Raising the price or cutting variable costs raises the contribution and lowers the number of sales you need. Knowing this number tells you whether a plan is realistic.",
+      "quiz": [
+        {
+          "q": "Fixed costs are $600 a month and each sale contributes $8. What is the break-even point?",
+          "options": [
+            "600 sales",
+            "80 sales",
+            "60 sales",
+            "75 sales"
+          ],
+          "answer": 3,
+          "why": "Break-even equals fixed costs divided by contribution per unit: 600 / 8 = 75."
+        },
+        {
+          "q": "Which one is a variable cost?",
+          "options": [
+            "Annual insurance",
+            "Office lease",
+            "Raw materials for each unit",
+            "Monthly software subscription"
+          ],
+          "answer": 2,
+          "why": "Variable costs grow with each unit sold. Materials are the classic example."
+        },
+        {
+          "q": "If you raise your price (and demand holds), what happens to break-even units?",
+          "options": [
+            "They stay the same",
+            "They become negative",
+            "They go up",
+            "They go down"
+          ],
+          "answer": 3,
+          "why": "A higher price increases contribution per unit, so fewer sales cover the fixed costs."
+        }
+      ]
+    },
+    {
+      "id": "cash-flow",
+      "name": "Cash Flow & Runway",
+      "prereqs": [
+        "revenue-vs-profit"
+      ],
+      "x": 62,
+      "y": 62,
+      "pretest": "How can a profitable business still run out of money and fail?",
+      "lesson": "Profit is not cash. If you invoice a client for $5,000 but they pay in 60 days, you may be profitable on paper while unable to pay rent today. Cash flow tracks when money actually moves in and out. To improve it, ask for deposits, invoice promptly, shorten payment terms, and delay non-urgent spending. Runway is how many months you can survive: cash on hand divided by monthly burn. With $12,000 and $3,000 burn, you have 4 months.",
+      "quiz": [
+        {
+          "q": "Why can a profitable business still fail?",
+          "options": [
+            "Banks forbid it",
+            "Profit is not cash, so timing gaps can leave it unable to pay bills",
+            "Profit always disappears",
+            "Profit does not matter"
+          ],
+          "answer": 1,
+          "why": "If customers pay late while bills are due now, you can run out of cash despite being profitable on paper."
+        },
+        {
+          "q": "Which move best improves cash flow?",
+          "options": [
+            "Spending first, invoicing later",
+            "Offering 90-day payment terms",
+            "Hiring more staff",
+            "Collecting deposits upfront"
+          ],
+          "answer": 3,
+          "why": "Deposits bring cash in before you incur the cost of doing the work."
+        },
+        {
+          "q": "You have $12,000 in cash and spend $3,000 a month. What is your runway?",
+          "options": [
+            "12 months",
+            "4 months",
+            "3 months",
+            "6 months"
+          ],
+          "answer": 1,
+          "why": "Runway is cash divided by monthly burn: 12,000 / 3,000 = 4 months."
+        }
+      ]
+    },
+    {
+      "id": "budgeting-bookkeeping",
+      "name": "Budgeting & Bookkeeping",
+      "prereqs": [
+        "cash-flow"
+      ],
+      "x": 65,
+      "y": 40,
+      "pretest": "You get paid into your personal account and pay business bills from it. What could go wrong?",
+      "lesson": "Open a separate business bank account from day one. Mixing money makes records messy, complicates taxes, and can weaken the liability protection of an LLC. Record every transaction, categorize it (income, supplies, software, travel), and save receipts. A budget is a plan: expected income, fixed and variable costs, and a cushion. Review actual versus planned monthly. A common guideline is to keep tax records for at least three years.",
+      "quiz": [
+        {
+          "q": "Why keep business and personal money in separate accounts?",
+          "options": [
+            "Banks require it for every customer",
+            "Cleaner records, easier taxes, and stronger liability separation",
+            "It lowers your tax rate",
+            "It earns more interest"
+          ],
+          "answer": 1,
+          "why": "Separation keeps records clean and supports your legal and tax position."
+        },
+        {
+          "q": "What is a budget?",
+          "options": [
+            "A loan",
+            "A plan for expected income and costs that you compare against actuals",
+            "A record of past spending only",
+            "A tax form"
+          ],
+          "answer": 1,
+          "why": "A budget sets expectations. Comparing it with reality each month shows where to adjust."
+        },
+        {
+          "q": "What should you do with receipts and transactions?",
+          "options": [
+            "Record, categorize, and keep them as documentation",
+            "Throw them away after a month",
+            "Only keep big ones",
+            "Hand them to customers"
+          ],
+          "answer": 0,
+          "why": "Good records support your tax deductions and help you understand the business."
+        }
+      ]
+    },
+    {
+      "id": "self-employment-taxes",
+      "name": "Taxes for the Self-Employed",
+      "prereqs": [
+        "business-structures",
+        "budgeting-bookkeeping"
+      ],
+      "x": 85,
+      "y": 30,
+      "pretest": "When you work for yourself, who sets aside your taxes from each payment you receive?",
+      "lesson": "In the US, you do. No employer withholds anything. Self-employed people pay income tax plus self-employment tax of 15.3%: 12.4% for Social Security and 2.9% for Medicare, generally on most of net earnings. You usually make estimated payments quarterly. Business expenses reduce taxable profit, so tracking them matters. A common rule of thumb is to set aside a quarter to a third of each payment. Check current rules or ask a tax professional; this is education, not tax advice.",
+      "quiz": [
+        {
+          "q": "What does the 15.3% self-employment tax cover?",
+          "options": [
+            "Social Security (12.4%) and Medicare (2.9%)",
+            "Import duties",
+            "Sales tax and property tax",
+            "State income tax"
+          ],
+          "answer": 0,
+          "why": "It is the self-employed version of the Social Security and Medicare taxes an employer and employee would split."
+        },
+        {
+          "q": "Why do self-employed people usually make estimated tax payments each quarter?",
+          "options": [
+            "No employer withholds tax for them",
+            "Quarterly payments are only for corporations",
+            "It is optional bonus tax",
+            "It is a fee for banking"
+          ],
+          "answer": 0,
+          "why": "Taxes are due as income is earned. With no paycheck withholding, you pay in installments yourself."
+        },
+        {
+          "q": "What do deductible business expenses do?",
+          "options": [
+            "Reduce your taxable profit",
+            "Increase your taxable profit",
+            "Have no effect",
+            "Cancel all taxes"
+          ],
+          "answer": 0,
+          "why": "Profit is revenue minus expenses, and tax is based on profit, so legitimate expenses lower the tax base."
+        }
+      ]
+    },
+    {
+      "id": "marketing-sales",
+      "name": "Marketing & Sales",
+      "prereqs": [
+        "problem-and-customer"
+      ],
+      "x": 12,
+      "y": 62,
+      "pretest": "Where do your first ten customers most likely come from?",
+      "lesson": "Early customers usually come from direct outreach: your network, communities where your customers already gather, and personal conversations, not ads. Two numbers matter. Customer acquisition cost (CAC) is what you spend on marketing and sales divided by new customers: $500 / 10 = $50. Lifetime value (LTV) is the profit a customer brings over time. If LTV is not comfortably higher than CAC, growth loses money. Learn what works with small tests before spending big.",
+      "quiz": [
+        {
+          "q": "Where do most early customers come from?",
+          "options": [
+            "Direct outreach and personal networks",
+            "Billboards",
+            "TV ads",
+            "Random luck"
+          ],
+          "answer": 0,
+          "why": "Personal outreach is cheap, teaches you what customers want, and works with no budget."
+        },
+        {
+          "q": "You spend $500 on marketing and win 10 customers. What is your CAC?",
+          "options": [
+            "$5",
+            "$500",
+            "$50",
+            "$5,000"
+          ],
+          "answer": 2,
+          "why": "CAC is spend divided by new customers: 500 / 10 = 50."
+        },
+        {
+          "q": "What do you want from LTV compared with CAC?",
+          "options": [
+            "LTV well above CAC",
+            "LTV equal to zero",
+            "They do not relate",
+            "LTV below CAC"
+          ],
+          "answer": 0,
+          "why": "If a customer is worth more over time than they cost to win, growth makes money."
+        }
+      ]
+    },
+    {
+      "id": "launch-and-iterate",
+      "name": "Launch & Iterate",
+      "prereqs": [
+        "break-even",
+        "self-employment-taxes",
+        "marketing-sales"
+      ],
+      "x": 50,
+      "y": 8,
+      "pretest": "You launched and nobody bought. What do you do next?",
+      "lesson": "Launch small. A minimum viable product, or MVP, is the smallest version that tests your riskiest assumption, such as will anyone pay for this. Before scaling, check the basics: each sale makes money, you know your break-even, you can survive on your cash runway, and you have set aside taxes. If results are weak, do not guess. Talk to people who did not buy, learn why, change one thing, and test again. Iteration beats perfection.",
+      "quiz": [
+        {
+          "q": "What is a minimum viable product (MVP)?",
+          "options": [
+            "A product with every feature",
+            "A marketing slogan",
+            "The smallest version that tests your riskiest assumption",
+            "A cheap, low-quality product"
+          ],
+          "answer": 2,
+          "why": "An MVP exists to learn quickly, not to be complete."
+        },
+        {
+          "q": "You launched and nobody bought. What is the best next step?",
+          "options": [
+            "Give up immediately",
+            "Raise your prices",
+            "Talk to people who did not buy and learn why",
+            "Spend a lot more on ads"
+          ],
+          "answer": 2,
+          "why": "Understanding why people passed tells you what to change instead of guessing."
+        },
+        {
+          "q": "Before scaling up spending, what should you confirm?",
+          "options": [
+            "That you have a big office",
+            "That competitors are quiet",
+            "That the logo is final",
+            "That each sale makes money and you know your break-even"
+          ],
+          "answer": 3,
+          "why": "Scaling a model that loses money on each sale only loses money faster."
+        }
+      ]
+    }
+  ]
 }

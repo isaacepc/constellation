@@ -1,7 +1,373 @@
 {
   "slug": "artist",
-  "title": "Artist",
+  "title": "Artist & Animator",
   "emoji": "🎨",
-  "tagline": "I want to make pictures that make people feel something.",
-  "stars": []
+  "tagline": "Make pictures that feel alive, and then make them move.",
+  "stars": [
+    {
+      "id": "shape-and-form",
+      "name": "Shape & Form",
+      "prereqs": [],
+      "x": 15,
+      "y": 85,
+      "pretest": "How would you start drawing a complicated object, like a person or a car?",
+      "lesson": "Every complicated object is built from simple forms: spheres, cylinders, boxes, and cones. Start with big, simple shapes to get proportion and position right, then add detail. Imagine drawing through the form as if it were transparent, which helps you understand how it sits in space. For living things, begin with gesture, a quick line capturing the movement and energy. Get the big idea in seconds before worrying about detail.",
+      "quiz": [
+        {
+          "q": "Why break a complex subject into basic shapes?",
+          "why": "Simple forms let you check structure and proportion before detail.",
+          "options": [
+            "Shapes are required by law",
+            "It makes drawings look cartoonish",
+            "It makes proportion and structure easier to get right",
+            "It saves paper"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What is gesture drawing for?",
+          "why": "A fast gesture records the action line of a pose, which gives life to the final drawing.",
+          "options": [
+            "Capturing movement and energy quickly",
+            "Adding fine detail",
+            "Erasing mistakes",
+            "Choosing colors"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does it mean to draw through a form?",
+          "why": "Seeing the hidden sides helps you understand the object's volume in space.",
+          "options": [
+            "Draw only the outline",
+            "Draw very lightly",
+            "Sketch as if it were transparent, including the hidden parts",
+            "Draw it on tracing paper"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "value-and-light",
+      "name": "Value & Light",
+      "prereqs": [],
+      "x": 45,
+      "y": 85,
+      "pretest": "Squint at your favorite picture. What do you still see when the details blur?",
+      "lesson": "Value is how light or dark something is, separate from its color. Strong images are built on a simple value structure: light, middle, and dark shapes arranged on purpose. Squinting blurs detail so you see those big value shapes. Light creates form: lit side, shadow side, and a cast shadow on the ground. Keep one consistent light direction, and plan values with small thumbnail sketches before you start the final piece.",
+      "quiz": [
+        {
+          "q": "What is value in art?",
+          "why": "Value is lightness or darkness, independent of hue.",
+          "options": [
+            "How light or dark something is",
+            "How expensive the artwork is",
+            "How large it is",
+            "How bright the color is"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does squinting at a scene help you see?",
+          "why": "Blurring the details leaves only the main light and dark masses.",
+          "options": [
+            "The exact colors",
+            "Hidden objects",
+            "The brush strokes",
+            "The big value shapes without distracting detail"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Why keep one consistent light direction?",
+          "why": "Conflicting lights confuse the viewer about the shape and position of objects.",
+          "options": [
+            "It is a rule with no reason",
+            "It makes colors brighter",
+            "It makes the drawing faster",
+            "So the forms and shadows look believable"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "animation-principles",
+      "name": "Animation Principles",
+      "prereqs": [],
+      "x": 82,
+      "y": 85,
+      "pretest": "A ball bounces. What small things make it feel heavy, bouncy, or alive?",
+      "lesson": "Animators learned that motion feels real when certain principles are used. Squash and stretch gives weight and flexibility. Anticipation is a small opposite motion before the main action, such as a crouch before a jump. Slow in and slow out means motion eases at the start and end of a movement. Follow-through lets parts keep moving after the body stops. Arcs make movement natural, and exaggeration makes it clear.",
+      "quiz": [
+        {
+          "q": "What is anticipation in animation?",
+          "why": "A crouch before a jump tells the audience what is coming and sells the force.",
+          "options": [
+            "A sound effect",
+            "A small opposite movement before the main action",
+            "The end of the action",
+            "A camera move"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What does slow in and slow out mean?",
+          "why": "Real objects accelerate and decelerate, so adding more frames near the ends looks natural.",
+          "options": [
+            "Everything moves slowly",
+            "Movement eases at the start and end",
+            "The camera moves slowly",
+            "Characters speak slowly"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What does squash and stretch convey?",
+          "why": "A ball that squashes on impact feels soft and bouncy, a hard ball would not.",
+          "options": [
+            "The setting",
+            "Weight and flexibility",
+            "Sound",
+            "Color"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "composition",
+      "name": "Composition",
+      "prereqs": [
+        "shape-and-form"
+      ],
+      "x": 12,
+      "y": 62,
+      "pretest": "Where in a picture should the most important thing go: dead center, or somewhere else?",
+      "lesson": "Composition is how you arrange things so the eye goes where you want. Start with a clear focal point, using contrast in value, color, or detail. The rule of thirds divides the frame into a 3x3 grid, and placing key elements near the lines or crossings often feels more dynamic than dead center. Leading lines, like roads or arms, point toward the focus. Empty space, called negative space, gives the picture room to breathe.",
+      "quiz": [
+        {
+          "q": "What draws the eye to a focal point?",
+          "why": "The eye is drawn to differences, so contrast marks the most important area.",
+          "options": [
+            "Putting it in the corner",
+            "Contrast in value, color, or detail",
+            "Making it identical to everything else",
+            "Making it blurry"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What are leading lines?",
+          "why": "Roads, arms, and rivers can steer attention.",
+          "options": [
+            "Lines that guide the viewer's eye toward the focus",
+            "Lines of text",
+            "Border lines",
+            "Lines you erase"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is the rule of thirds?",
+          "why": "Off-center placement often feels more dynamic than dead center.",
+          "options": [
+            "Placing key elements near the lines of a 3x3 grid",
+            "Drawing three objects",
+            "Using only three colors",
+            "Dividing the picture in half"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "perspective",
+      "name": "Perspective",
+      "prereqs": [
+        "shape-and-form"
+      ],
+      "x": 30,
+      "y": 62,
+      "pretest": "Why do railroad tracks seem to meet in the distance?",
+      "lesson": "Perspective makes flat paper feel three-dimensional. The horizon line is always at your eye level. In one-point perspective, parallel lines that go away from you converge at a vanishing point on the horizon, like railroad tracks. Objects get smaller as they get farther away. If you look down on a scene your horizon is high, and if you look up from the ground your horizon is low, which changes the whole mood of the picture.",
+      "quiz": [
+        {
+          "q": "Where is the horizon line in a drawing?",
+          "why": "The horizon line is wherever your eyes are, which is why standing or crouching changes it.",
+          "options": [
+            "Always at the bottom",
+            "At the top of the page",
+            "At the farthest mountain",
+            "At the viewer's eye level"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What happens to parallel lines going away from you in one-point perspective?",
+          "why": "Parallel lines appear to meet at the vanishing point on the horizon.",
+          "options": [
+            "They cross twice",
+            "They converge at a vanishing point",
+            "They stay parallel",
+            "They curve away"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What happens to objects as they get farther away?",
+          "why": "Size diminishes with distance.",
+          "options": [
+            "They appear larger",
+            "They appear smaller",
+            "They change color",
+            "They disappear"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "color-theory",
+      "name": "Color Theory",
+      "prereqs": [
+        "value-and-light"
+      ],
+      "x": 50,
+      "y": 62,
+      "pretest": "If you wanted a bright orange to really pop, what color would you put next to it?",
+      "lesson": "Color has three properties: hue (the color itself), saturation (its intensity), and value (its lightness). Complementary colors sit opposite each other on the color wheel, such as blue and orange, and make each other pop. Warm colors tend to advance and cool colors recede. Beginners often use too many colors, so choose a limited palette. Check your work in grayscale: if the values read well, the picture works even if the colors change.",
+      "quiz": [
+        {
+          "q": "Which color is complementary to blue?",
+          "why": "Complementary colors sit opposite each other on the color wheel. Blue's opposite is orange.",
+          "options": [
+            "Orange",
+            "Cyan",
+            "Purple",
+            "Green"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why check a picture in grayscale?",
+          "why": "Strong value structure carries a picture even when colors change.",
+          "options": [
+            "To see whether the values read clearly",
+            "To turn it into a photo",
+            "To save ink",
+            "To remove mistakes"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does saturation mean?",
+          "why": "High saturation is vivid, low saturation is grayish.",
+          "options": [
+            "How warm the color is",
+            "How large the color shape is",
+            "How light the color is",
+            "The intensity or purity of a color"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "timing-and-frames",
+      "name": "Timing & Frames",
+      "prereqs": [
+        "animation-principles"
+      ],
+      "x": 82,
+      "y": 62,
+      "pretest": "A film shows 24 pictures a second. How many drawings would you need for a 2-second shot?",
+      "lesson": "Animation is a series of still images shown quickly. Film typically runs at 24 frames per second, and animating on twos means one drawing for every two frames, or 12 drawings a second. Timing is how many frames an action takes: fewer frames feel fast, more feel slow or heavy. Spacing is how far an object moves between frames. In a bouncing ball, the drawings bunch up near the top of the arc, where it slows, and spread out near the ground.",
+      "quiz": [
+        {
+          "q": "What is a standard frame rate for film?",
+          "why": "24 fps is the long-standing cinema standard.",
+          "options": [
+            "2 frames per second",
+            "1,000 frames per second",
+            "24 frames per second",
+            "240 frames per second"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What does animating on twos mean?",
+          "why": "At 24 fps that means 12 unique drawings per second.",
+          "options": [
+            "Two cameras",
+            "Two characters per scene",
+            "One drawing is held for two frames",
+            "Two colors"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "In a bouncing ball, where are the drawings closest together?",
+          "why": "The ball slows at the peak, so spacing is tight there, and wide as it speeds up near the ground.",
+          "options": [
+            "Evenly everywhere",
+            "Near the ground",
+            "Near the top of the arc, where it slows",
+            "At the very start only"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "storytelling-pipeline",
+      "name": "From Idea to Film",
+      "prereqs": [
+        "composition",
+        "perspective",
+        "color-theory",
+        "timing-and-frames"
+      ],
+      "x": 50,
+      "y": 20,
+      "pretest": "Where would you start if you wanted to make a 30-second animated short?",
+      "lesson": "A short film moves through stages. Start with the story, then storyboards, rough drawings of each shot. Next, an animatic: boards timed to sound, which shows whether the story works while changes are still cheap. Then comes layout, key poses, inbetweens that fill the motion, clean-up and color, and compositing. Get feedback early, because changing a board costs minutes and changing finished animation costs weeks.",
+      "quiz": [
+        {
+          "q": "What is a storyboard?",
+          "why": "Boards let you plan the shots before the expensive animation work.",
+          "options": [
+            "The final film",
+            "A color palette",
+            "A script only",
+            "Rough drawings that plan each shot"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Why make an animatic before animating?",
+          "why": "Changing boards takes minutes, while changing finished animation takes weeks.",
+          "options": [
+            "It replaces sound",
+            "It is the final render",
+            "Timing and story can be fixed cheaply",
+            "It makes the film shorter"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What are key poses?",
+          "why": "Keys set the major poses, and inbetweens fill the motion between them.",
+          "options": [
+            "The sound effects",
+            "The credits",
+            "The final colors",
+            "The main drawings that define the important moments of a motion"
+          ],
+          "answer": 3
+        }
+      ]
+    }
+  ]
 }
