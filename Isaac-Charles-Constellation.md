@@ -2,10 +2,14 @@
 
 **Live demo: https://constellation-six.vercel.app**
 
-> *What did you want to be when you were a kid?*
-> Pick that dream and Constellation turns it into a map of the skills a grown-up in that job really needs. You light up each star by **remembering, not rereading**.
+## For the joy of learning
 
-Built for the mini-hackathon prompt: **"Build something that helps people learn."**
+**Remember when you were a kid? Kids LOVE to learn.** Somewhere along the way, a lot of us lost some of that joy. Constellation is built to **re-spark it.**
+
+> *What did you want to be when you were a kid?*
+> Pick that dream and Constellation turns it into a map of the skills a grown-up in that job really needs. You light up each star by **remembering, not rereading**, and every glowing star is a small "I know that!"
+
+Built for the mini-hackathon prompt: **"Build something that helps people learn."** Our answer: help people *love* learning again, using methods the research says actually work.
 
 ## The idea
 
